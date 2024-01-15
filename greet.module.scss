@@ -1,0 +1,26 @@
+@use "../colors/colors" as *;
+
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0.8;
+	}
+}
+
+.greet {
+	color: white;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	&__cursor {
+		font-size: 1.5rem;
+		opacity: 1;
+		animation-name: cursor;
+		animation-duration: 0.5s;
+		animation-iteration-count: infinite;
+	}
+}
